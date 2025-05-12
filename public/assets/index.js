@@ -14,6 +14,9 @@ import shopmora from './company/shopmora.png';
 import classroomio from './company/classroomio.png';
 import stuntMedia from './company/stuntMedia.png';
 import kidan from './company/kidan.png';
+import navix from './experience/navix.png'
+import mariana from './experience/mariana.svg'
+import marianaa from './experience/marianaaa.png'
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
@@ -41,6 +44,9 @@ import express from './experience/Express.png';
 import c from './experience/C.png';
 
 export {
+  navix,
+  mariana,
+  marianaa,
   naijaStars,
   classroomIO,
   shopmoraExp,

@@ -1,21 +1,14 @@
 import {
   creator,
   web,
-  ilorin,
-  shopmora,
   classroomio,
   experienceOne,
-  exerienceTwo,
-  exerienceThree,
-  // exerienceFour,
-  exerienceFive,
-  exerienceSeven,
-  exerienceNine,
+  exerienceFour,
   stuntMedia,
-  express,
+  marianaa,
   kidan,
-  c,
   naijaStars,
+  navix,
   classroomIO
 } from '/public/assets';
 
@@ -70,10 +63,13 @@ const technologies = [
     name: 'React JS',
   },
   {
+    name: 'React Native',
+  },
+  {
     name: 'Redux Toolkit',
   },
   {
-    name: 'svelte Js',
+    name: 'Sveltekit Js',
   },
   {
     name: 'Node Js',
@@ -82,13 +78,13 @@ const technologies = [
     name: 'Express Js',
   },
   {
-    name: '.NET',
-  },
-  {
     name: 'Python',
   },
   {
     name: 'supabase',
+  },
+  {
+    name: 'neon db',
   },
   {
     name: 'firebase',
@@ -118,12 +114,31 @@ const experiences = [
     link: 'https://github.com/classroomio/classroomio',
     iconBg: '#383E56',
     points: [
-      'Implemented the landing page design using Sveltekit and Tailwindcss.',
-      'Implemented a multi-translations feature on the platform which aids easy use of the platform amongst other things for users around the world.',
-      'Wrote a script on the backend that translates the English json file into multiple languages to take away the burden of translating for different languages on other contributors.',
-      'Implemented AI features which includes generation of Outlines, Notes and Questions for students.',
-      'Contributed to the enhancement of system performance by optimizing and refining existing code, improving the overall efficiency of both frontend and backend processes.',
-      'Actively engaged in collaborative code reviews, providing and receiving constructive feedback to enhance the overall codebase and development process. This process contributed to the continuous improvement of the codebase and the overall development workflow.',
+      'Designed and implemented a scalable multi-language system, increasing international adoption by 40%.',
+      'Built an OpenAI-integrated content generation feature, reducing content creation time by 70% for course creators.',
+      'Reduced bug regression rate by 50% through code reviews and continuous refactoring.',
+      'Enhanced frontend responsiveness and reduced load time by 45%, improving usability across devices.',
+      'Launched a Chrome browser extension to turn any web page into an interactive quiz, powered by Supabase and gamification features.',
+      'Built and deployed Naija Stars (naijastars.dev), an open-source discovery platform.',
+      'Created a Deno pipeline that auto-tracks Nigerian GitHub repositories with scheduled updates to Neon DB.',
+      'Delivered multiple feature enhancements and platform adjustments based on user feedback, contributing to a 30% improvement in customer satisfaction scores on Classroomio.',
+      'Optimized frontend rendering and backend API performance, resulting in a 45% reduction in page load times and a significantly improved user experience across all device types.'
+    ],
+  },
+  {
+    title: 'Frontend Developer (React Js & Telegram Api)',
+    company_name: 'NavixEcosystem',
+    icon: navix,
+    link: 'https://www.navixecosystem.com/',
+    iconBg: '#383E56',
+    points: [
+      'Rebuilt UI for Telegram-based blockchain game using React and Tailwind CSS, resulting in a 30% increase in user engagement and positive feedback from beta testers.',
+      'Optimized frontend performance by restructuring codebase, resulting in 40% faster page loads and 25% smaller bundle size.',
+      'Developed AI-driven game logic (minimax with randomization), extending average session length by 15+ minutes.',
+      'Wrote integration tests with 95% code coverage, reducing production bugs by 60%.',
+      'Improved platform uptime from 87% to 99.5% through proactive debugging and infrastructure collaboration.',
+      'Led collaborative debugging sessions with the engineering team, prioritizing and resolving critical issues that improved system reliability from 87% to 99.5% uptime.',
+      'Implemented performance optimizations across the frontend and backend, resulting in a 35% reduction in API response times and a 50% decrease in client-side rendering bottlenecks.',
     ],
   },
   {
@@ -137,21 +152,6 @@ const experiences = [
       'Actively participated in code reviews, debugging and pair programming sessions providing constructive feedback. This process contributed to the continuous improvement of the codebase and the overall development workflow.',
       'Engaged in knowledge-sharing initiatives within the team, facilitating skill development and fostering a collaborative environment conducive to efficient problem-solving and project success.',
       'Assisted with the implementation of features, both on the frontend and backend, enhancing the overall functionality and user experience of the platform.',
-    ],
-  },
-  {
-    title: 'React Developer',
-    company_name: 'Ilorin Innovation Hub',
-    icon: ilorin,
-    link: '',
-    iconBg: '#fff',
-    points: [
-      "Collaborated with the team lead in crafting a compelling pitch deck for the hackathon's presentation, showcasing key features and value propositions.",
-      "Played a pivotal role in designing the system's dashboard UI, contributing to an intuitive and visually appealing user interface.",
-      "Spearheaded the development of both the landing page and the system's dashboard, utilizing React to create dynamic and engaging web experiences.",
-      "Delivered a persuasive product pitch at the 2023 Ilorin Innovation Hub Hackathon, effectively communicating the project's vision and impact.",
-      'Implemented a responsive design strategy, ensuring a seamless user experience across various devices, and meticulously ensured cross-browser compatibility.',
-      'Actively participated in collaborative code reviews, offering and receiving constructive feedback, fostering continuous improvement within the development team.',
     ],
   },
 ];
@@ -197,7 +197,7 @@ const projects = [
     source_code_link: 'https://github.com/classroomio/naija-stars',
     live_link: 'https://naijastars.dev/',
   },
-    {
+  {
     name: 'ClassroomIO',
     description: 'A simple landing page from classroomio',
     tags: [
@@ -211,8 +211,47 @@ const projects = [
       }, 
     ],
     image: classroomIO,
-    source_code_link: '#',
+    source_code_link: 'https://github.com/classroomio/classroomio',
     live_link: 'https://classroomio.com/',
+  },
+  {
+    name: 'Shopmora',
+    description: 'A Landing page for a small scale fashion business.',
+    tags: [
+      {
+        name: 'ReactJs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Gsap',
+        color: 'green-text-gradient',
+      },
+
+      {
+        name: 'Framer Motion',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: exerienceFour,
+    source_code_link: 'https://github.com/tunny17/Shopmora',
+    live_link: 'https://shopmora-co.netlify.app/',
+  },
+  {
+    name: 'Mariana',
+    description: 'A Landing page for a small scale fashion business.',
+    tags: [
+      {
+        name: 'ReactJs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Tailwindcss',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: marianaa,
+    source_code_link: '#',
+    live_link: 'https://mariana-test.netlify.app/',
   },
     {
     name: 'Kidan',
@@ -252,28 +291,6 @@ const projects = [
     source_code_link: '#',
     live_link: 'https://stuntmedia.netlify.app/',
   },
-  // {
-  //   name: 'Shopmora',
-  //   description: 'A Landing page for a small scale fashion business.',
-  //   tags: [
-  //     {
-  //       name: 'ReactJs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'Gsap',
-  //       color: 'green-text-gradient',
-  //     },
-
-  //     {
-  //       name: 'Framer Motion',
-  //       color: 'green-text-gradient',
-  //     },
-  //   ],
-  //   image: exerienceFour,
-  //   source_code_link: 'https://github.com/tunny17/Shopmora',
-  //   live_link: 'https://shopmora-co.netlify.app/',
-  // },
   {
     name: 'Art Hotel',
     description: 'Web-based platform that allows users to book',
@@ -302,31 +319,6 @@ const projects = [
     image: experienceOne,
     source_code_link: 'https://github.com/tunny17/arthotel',
     live_link: 'https://arthotel.netlify.app/',
-  },
-  {
-    name: 'NFT Marketplace Template',
-    description: 'A Simple NFT marketplace',
-    tags: [
-      {
-        name: 'HTML',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'CSS',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Axios',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'Material UI',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: exerienceNine,
-    source_code_link: 'https://github.com/tunny17/nft-marketplace',
-    live_link: 'https://tunnymarketplace.netlify.app/',
   },
  
 ];
