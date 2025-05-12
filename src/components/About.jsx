@@ -18,18 +18,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[16px] leading-[30px] text-center'>
-        I am a dedicated and results-driven Frontend Developer with over 3 years
-        of experience of creating engaging and user-friendly web experiences. I
-        possess a strong foundation in frontend technologies such as HTML, CSS
-        (SASS, Tailwind CSS, Bootstrap etc.), JavaScript (and it’s frameworks &
-        libraries like Svelte Js, React Js, Next.js, Node Js, Deno, Express, MongoDB)
-        . My goal is and has always been to combine my technical expertise
-        with a creative approach to deliver seamless and visually appealing
-        websites and applications.
-        <br /> I'm a quick learner and I collaborate closely with
-        clients/developers to create efficient, scalable, and user-friendly
-        solutions that solve real-world problems. Let's work together to bring
-        your ideas to life.
+        Experienced and results-driven Frontend Developer with over 3 years of experience building responsive, scalable, and high-performance web applications using modern frontend technologies such as React.js, Next.js, TypeScript, Tailwind CSS, and SvelteKit. Adept at translating UI/UX designs into clean, efficient code, optimizing performance, and delivering cross-browser, mobile-first experiences. Strong background in RESTful APIs, state management (Redux, Context API), and integrating AI and Web3 features. Proven success working in Agile/Scrum teams and contributing to open-source and startup environments..
       </motion.p>
 
       {/* <div className='mt-20 flex flex-wrap justify-evenly'>
