@@ -233,7 +233,7 @@ const projects = [
       },
     ],
     image: exerienceFour,
-    source_code_link: 'https://github.com/tunny17/Shopmora',
+    source_code_link: 'https://github.com/tunjiadeyemi/Shopmora',
     live_link: 'https://shopmora-co.netlify.app/',
   },
   {
@@ -317,7 +317,7 @@ const projects = [
       },
     ],
     image: experienceOne,
-    source_code_link: 'https://github.com/tunny17/arthotel',
+    source_code_link: 'https://github.com/tunjiadeyemi/arthotel',
     live_link: 'https://arthotel.netlify.app/',
   },
  
