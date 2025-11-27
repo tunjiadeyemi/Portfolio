@@ -15,8 +15,6 @@ import classroomio from './company/classroomio.png';
 import stuntMedia from './company/stuntMedia.png';
 import kidan from './company/kidan.png';
 import navix from './experience/navix.png'
-import mariana from './experience/mariana.svg'
-import marianaa from './experience/marianaaa.png'
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
@@ -26,6 +24,11 @@ import naijaStars from './experience/naija-stars.png'
 import classroomIO from './experience/classroomio.png';
 import shopmoraExp from './experience/shopmora.png'
 import afri from './experience/afriagri.png'
+
+import mariana from './experience/marianaaa.png';
+import nura from './experience/nura.png';
+import gambit from './experience/gambit.png';
+import spacery from './experience/spacery.png';
 
 import experienceOne from './experience/Screenshot (198).png';
 import exerienceTwo from './experience/Screenshot (202).png';
@@ -44,9 +47,9 @@ import express from './experience/Express.png';
 import c from './experience/C.png';
 
 export {
+  nura, gambit, spacery,
   navix,
   mariana,
-  marianaa,
   naijaStars,
   classroomIO,
   shopmoraExp,

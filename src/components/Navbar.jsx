@@ -11,47 +11,57 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-transparent glass-container`}>
-      <div className='w-full flex justify-between items-center mx-auto'>
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-transparent glass-container`}
+    >
+      <div className="w-full flex justify-between items-center mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
-          }}>
-          <img src={logo} alt='Logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[15px] tracking-widest font-bold cursor-pointer flex balkind uppercase'>
-            Adetunji &nbsp; <span className='sm:block hidden'> Adeyemi</span>
+          }}
+        >
+          <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[15px] tracking-widest font-bold cursor-pointer flex balkind uppercase">
+            Adetunji &nbsp; <span className="sm:block hidden"> Adeyemi</span>
           </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
                 active === link.title ? 'text-white' : 'text-secondary'
               } balkind uppercase tracking-widest hover:text-white text-sm hover:transition-all transition-all font-semibold cursor-pointer`}
-              onClick={() => setActive(link.title)}>
-              <a href={`${link.id}`}>{link.title}</a>
+              onClick={() => setActive(link.title)}
+            >
+              <a
+                href={`${link.id}`}
+                target={link.isExternal ? '_blank' : '_self'}
+                rel={link.isExternal ? 'noopener noreferrer' : undefined}
+              >
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
 
         {/* hidden nav */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
 
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
-            } p-6 bg-black absolute top-16 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-l`}>
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
+            } p-6 bg-black absolute top-16 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-l`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
@@ -61,8 +71,15 @@ const Navbar = () => {
                   onClick={() => {
                     setActive(link.title);
                     setToggle(!toggle);
-                  }}>
-                  <a href={`${link.id}`}>{link.title}</a>
+                  }}
+                >
+                  <a
+                    href={`${link.id}`}
+                    target={link.isExternal ? '_blank' : '_self'}
+                    rel={link.isExternal ? 'noopener noreferrer' : undefined}
+                  >
+                    {link.title}
+                  </a>
                 </li>
               ))}
             </ul>
