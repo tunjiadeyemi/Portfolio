@@ -1,9 +1,9 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+/* eslint-disable react-refresh/only-export-components */
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { motion } from 'framer-motion';
 
-import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
@@ -11,12 +11,12 @@ import express from '/Express.png';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#fff' }}
+    contentStyle={{ background: 'transparent', color: '#fff', border: '1px solid black' }}
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
-      <div className="flex justify-center items-center w-full h-full">
+      <div className="flex justify-center items-center w-full h-full border-2 rounded-full">
         <img
           src={experience?.icon ? experience?.icon : express}
           alt={experience.company_name}
@@ -26,10 +26,10 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      <h3 className="text-white text-[20px] mb-2 font-bold">{experience.title}</h3>
+      <h3 className="text-black text-sm md:text-[20px] mb-2 font-bold">{experience.title}</h3>
       <a
         href={experience.link ? experience.link : '#'}
-        className="text-secondary text-[16px] font-semibold underline"
+        className="text-black text-xs md:text-[16px] font-semibold underline"
       >
         {experience.company_name}
       </a>
@@ -39,7 +39,7 @@ const ExperienceCard = ({ experience }) => (
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
+          className="text-black text-[14px] pl-1 tracking-wider"
         >
           {point}
         </li>
@@ -50,10 +50,9 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I Have Done So Far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience</h2>
+    <div className="border-b-2 px-5 pb-20 md:px-20">
+      <motion.div variants={textVariant()} className="text-left">
+        <p className={` balkind text-black text-5xl font-bold tracking-widest`}>Experience</p>
       </motion.div>
 
       <div className="flex flex-col">
@@ -63,7 +62,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -14,16 +14,16 @@ import shopmora from './company/shopmora.png';
 import classroomio from './company/classroomio.png';
 import stuntMedia from './company/stuntMedia.png';
 import kidan from './company/kidan.png';
-import navix from './experience/navix.png'
+import navix from './experience/navix.png';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
-import naijaStars from './experience/naija-stars.png'
+import naijaStars from './experience/naija-stars.png';
 import classroomIO from './experience/classroomio.png';
-import shopmoraExp from './experience/shopmora.png'
-import afri from './experience/afriagri.png'
+import shopmoraExp from './experience/shopmora.png';
+import afri from './experience/afriagri.png';
 
 import mariana from './experience/marianaaa.png';
 import nura from './experience/nura.png';
@@ -46,8 +46,12 @@ import exerienceThirteen from './experience/Screenshot (477).png';
 import express from './experience/Express.png';
 import c from './experience/C.png';
 
+export { default as background } from './background.svg';
+
 export {
-  nura, gambit, spacery,
+  nura,
+  gambit,
+  spacery,
   navix,
   mariana,
   naijaStars,
@@ -102,5 +106,5 @@ export {
   // svelte,
   // node,
   express,
-  c,
+  c
 };
